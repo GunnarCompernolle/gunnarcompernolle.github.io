@@ -47,6 +47,18 @@ a{
 		margin-top: 88vh;
 		position: fixed;
 	}
+	
+	.cube{
+		width: 35vh;
+		height: 22vh;
+		margin-top: 2vh;
+		float: left;
+	}
+	
+	#naam1{
+		font-size: 20px;
+		color: black;
+	}
 }
 
 /* Voor DESKTOP */
