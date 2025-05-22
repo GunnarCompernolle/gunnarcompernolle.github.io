@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* CSS Document */
+a{
+	text-decoration: none;
+	text-decoration-color: none;
+	
+}
+.hover:hover{
+	cursor: pointer;
+}
+#speakNoSpeak:hover{
+	cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .col-m-1 {width: 8.33%; border: solid 1px red;  height: 50px; padding: 0px; float: left;}
+    .col-m-2 {width: 16.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-m-3 {width: 25%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-m-4 {width: 33.33%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-m-5 {width: 41.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-m-6 {width: 50%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-m-7 {width: 58.33%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-m-8 {width: 66.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-m-9 {width: 75%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-m-10 {width: 83.33%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-m-11 {width: 91.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-m-12 {width: 100%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+	
+
+	/* MOBIELE code binnen deze accolades van het @media stuk */
+		#header{
+		width: 100%;
+		height: 8vh;
+		background-color: #E2E3E4;
+		text-align: center;
+		font-size: 25px;
+		color: white;
+		padding-top: 20px;
+		position: fixed;
+	}
+	
+	#illu{
+		height: 70vh;
+		width: 50vh;
+		position: fixed;
+	}
+	#bottombar{
+		margin-top: 88vh;
+		position: fixed;
+	}
+}
+
+/* Voor DESKTOP */
+@media only screen and (min-width: 601px) {
+    .col-1 {width: 8.33%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-2 {width: 16.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-3 {width: 25%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-4 {width: 33.33%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-5 {width: 41.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-6 {width: 50%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-7 {width: 58.33%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-8 {width: 66.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-9 {width: 75%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-10 {width: 83.33%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-11 {width: 91.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-12 {width: 100%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+	
+	
+	/* DESKTOP code binnen deze accolades van het @media stuk */
+}
