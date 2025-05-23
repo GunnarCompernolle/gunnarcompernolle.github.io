@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<link rel="stylesheet" href="style_desktop.css">
+	
+<body>
+	
+<div class="col-12" id="topbar"></div>
+
+<div id="row1">
+	<div class="col-2" id="div1"></div>
+	<div class="col-1" id="gravo1"> <img src="Gravo_juist.png" style="width: 100%" alt="gravo" id="gravo" onMouseOver="gravo()" onMouseOut="gravoOut()"> </div>
+	<div class="col-1" id="div2"></div>
+	<div class="col-1" id="avivo1"> <img src="avivo.png" style="width: 100%" alt="avivo" id="avivo" onMouseOver="avivo()" onMouseOut="avivoOut()"> </div>
+	<div class="col-1" id="div3"></div>
+	<div class="col-1"> <img src="illustratie.png" style="width: 100%" alt="illu" id="illu"> </div>
+	<div class="col-1" id="div4"></div>
+	<div class="col-1"> <img src="webdesign.png" style="width: 100%" alt="web" id="web"> </div>
+	<div class="col-3" id="div5"></div>
+</div>
+	
+<script>
+function gravo(){
+	document.getElementById("gravo1").className = "col-2";
+	document.getElementById("div5").className = "col-2";
+}
+	
+function gravoOut(){
+	document.getElementById("gravo1").className = "col-1";
+	document.getElementById("div5").className = "col-3";
+}
+function avivo(){
+	document.getElementById("avivo1").className = "col-2";
+	document.getElementById("div5").className = "col-2";
+}
+	
+function avivoOut(){
+	document.getElementById("avivo1").className = "col-1";
+	document.getElementById("div5").className = "col-3";
+}
+</script>
+</body>
+</html>
