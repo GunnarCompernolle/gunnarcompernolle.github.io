@@ -1,19 +1,68 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 @media only screen and (max-width: 600px) {
-    .col-m-1 {width: 8.33%; border: solid 1px red;  height: 50px; padding: 0px; float: left;}
-    .col-m-2 {width: 16.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-m-3 {width: 25%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-m-4 {width: 33.33%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-m-5 {width: 41.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-m-6 {width: 50%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-m-7 {width: 58.33%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-m-8 {width: 66.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-m-9 {width: 75%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-m-10 {width: 83.33%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-m-11 {width: 91.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-m-12 {width: 100%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
 	
 	#header{
 		width: 100%;
@@ -43,19 +92,55 @@
 
 /* Voor DESKTOP */
 @media only screen and (min-width: 601px) {
-    .col-1 {width: 8.33%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-2 {width: 16.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-3 {width: 25%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-4 {width: 33.33%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-5 {width: 41.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-6 {width: 50%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-7 {width: 58.33%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-8 {width: 66.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-9 {width: 75%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-10 {width: 83.33%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-11 {width: 91.66%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
-    .col-12 {width: 100%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 	
+	#header{
+		width: 100%;
+		height: 15vh;
+		background-color: #E2E3E4;
+		text-align: center;
+		font-size: 25px;
+		color: white;
+		position:absolute;
+		z-index:-100;
+	}
+	
+		#gravovid{
+		width: 25vh;
+		height: 25vh;
+		margin:auto;
+		display:block;
+		margin-top:-5vh;
+		position:relative;
+	}
+	
+	#Sound{
+		width: 10vh;
+		height: 10vh;
+		float: left;
+		margin-left: 2vh;
+		margin-top: 2vh;
+		
+	}
+	
+	
+	.cube{
+		height: 65vh;
+		width: 90vh;
+		margin-top: 20vh
+	}
+
 	
 	/* DESKTOP code binnen deze accolades van het @media stuk */
 }
