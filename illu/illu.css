@@ -44,13 +44,13 @@ a{
 		position: fixed;
 	}
 	#bottombar{
-		margin-top: 88vh;
+		bottom:0;
 		position: fixed;
 	}
 	
 	.cube{
-		width: 65vh;
-		height: 52vh;
+		width: 35vh;
+		height: 22vh;
 		margin-top: 2vh;
 		float: left;
 	}
@@ -60,7 +60,13 @@ a{
 		color: black;
 	}
 	
+	#onderkant{
+		background-image: url("Onderkant.png");
+		background-size:cover;
+		background-repeat: no-repeat;
+		width:100%;
 	}
+	
 }
 
 /* Voor DESKTOP */
@@ -79,5 +85,52 @@ a{
     .col-12 {width: 100%;border: solid 1px red; height: 50px; padding: 0px; float: left;}
 	
 	
+	#onderkant{
+		background-image: url("onerkant-pc.png");
+		background-size:cover;
+		background-repeat: no-repeat;
+		width:100%;
+		bottom:0;
+	}
+	
+	#header{
+		width: 100%;
+		height: 40vh;
+		background-color: #E2E3E4;
+		text-align: center;
+		font-size: 25px;
+		color: white;
+		padding-top: 20px;
+		position: fixed;
+	}
+	
+	#illu{
+		height: 70vh;
+		width: 50vh;
+		position: fixed;
+	}
+	#bottombar{
+		width: 100%;
+		height: 20vh;
+		margin-top: 88vh;
+		position: fixed;
+		display:block;
+	}
+	
+	#cube1{
+		width:100vw;
+	}
+	#naam1{
+		font-size: 20px;
+		color: black;
+	}
+	
+	.cube{
+		width:50%;
+		margin:auto;
+		display:block;
+		border:solid 1px red;
+	}
+
 	/* DESKTOP code binnen deze accolades van het @media stuk */
 }
