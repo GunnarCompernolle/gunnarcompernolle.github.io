@@ -6,58 +6,88 @@
 </head>
 <link rel="stylesheet" href="style_desktop.css">
 <link rel="stylesheet" href="Gravo.html">
+<link rel="stylesheet" href="avivo1.html">
 <body>
 	
 <div class="col-12" id="topbar"></div>
 
 <div id="row1">
-	<div class="col-2" id="div1"></div>
-	<div class="col-1" id="gravo1"> <a href="Gravo.html"> <img src="Gravo_juist.png" style="width: 100%" alt="gravo" id="gravo" onMouseOver="gravo()" onMouseOut="gravoOut()"> </a></div>
-	<div class="col-1" id="div2"></div>
-	<div class="col-1" id="avivo1"> <img src="avivo.png" style="width: 100%" alt="avivo" id="avivo" onMouseOver="avivo()" onMouseOut="avivoOut()"> </div>
-	<div class="col-2" id="div3"></div>
-	<div class="col-1" id="illu1"> <img src="illustratie.png" style="width: 100%" alt="illu" id="illu" onMouseOver="illu()" onMouseOut="illuOut()"> </div>
-	<div class="col-1" id="div4"></div>
-	<div class="col-1" id="web1"> <img src="webdesign.png" style="width: 100%" alt="web" id="web" onMouseOver="web()" onMouseOut="webOut()"> </div>
-	<div class="col-2" id="div5"></div>
+	<div class="col-3" id="div1" style="height: 150px;"></div>
+	<div class="col-2" id="gravo1" style="height: 150px;"> 
+		<a href="Gravo.html"> 
+			<img src="Gravo_juist.png" style="width: 100%" alt="gravo" id="gravo" onMouseOver="gravo()" onMouseOut="gravoOut()"> 
+		</a>
+	</div>
+	<div class="col-2" id="div2" style="height: 150px;"></div>
+	<div class="col-2" id="avivo1" style="height: 150px;"> 
+		<a href="avivo1.html">
+			<img src="avivo.png" style="width: 100%" alt="avivo" id="avivo" onMouseOver="avivo()" onMouseOut="avivoOut()">
+		</a>
+	</div>
+	<div class="col-3" id="div3" style="height: 150px;"></div>
+</div>
+
+<div id="row2">
+	<div class="col-3" id="div4" style="height: 150px;"></div>
+	<div class="col-2" id="illu1" style="height: 150px;"> 
+		<img src="illustratie.png" style="width: 100%" alt="illu" id="illu" onMouseOver="illu()" onMouseOut="illuOut()"> 
+	</div>
+	<div class="col-2" id="div5" style="height: 150px;"></div>
+	<div class="col-2" id="web1" style="height: 150px;"> 
+		<img src="webdesign.png" style="width: 100%" alt="web" id="web" onMouseOver="web()" onMouseOut="webOut()"> 
+	</div>
+	<div class="col-3" id="div6" style="height: 150px;"></div>
 </div>
 	
 <script>
 function gravo(){
-	document.getElementById("gravo1").className = "col-2";
-	document.getElementById("div5").className = "col-1";
+	document.getElementById("gravo1").className = "col-4";
+	document.getElementById("div3").className = "col-2";
+	document.getElementById("div1").className = "col-2";
+	document.getElementById("gravo1").style.height = "300px";
+	document.getElementById("avivo1").style.height = "300px";
 }
 	
 function gravoOut(){
-	document.getElementById("gravo1").className = "col-1";
-	document.getElementById("div5").className = "col-2";
+	document.getElementById("gravo1").className = "col-2";
+	document.getElementById("div3").className = "col-3";
+	document.getElementById("div1").className = "col-3";
+	document.getElementById("gravo1").style.height = "150px";
+	document.getElementById("avivo1").style.height = "150px";
 }
 function avivo(){
-	document.getElementById("avivo1").className = "col-2";
-	document.getElementById("div5").className = "col-1";
+	document.getElementById("avivo1").className = "col-4";
+	document.getElementById("div3").className = "col-2";
+	document.getElementById("div1").className = "col-2";	document.getElementById("avivo1").style.height = "300px";
 }
 	
 function avivoOut(){
-	document.getElementById("avivo1").className = "col-1";
-	document.getElementById("div5").className = "col-2";
+	document.getElementById("avivo1").className = "col-2";
+	document.getElementById("div3").className = "col-3";
+	document.getElementById("div1").className = "col-3";
+	document.getElementById("avivo1").style.height = "150px";
 }
 function illu(){
-	document.getElementById("illu1").className = "col-2";
-	document.getElementById("div1").className = "col-1";
+	document.getElementById("illu1").className = "col-4";
+	document.getElementById("div4").className = "col-2";
+	document.getElementById("div6").className = "col-2";
 }
 	
 function illuOut(){
-	document.getElementById("illu1").className = "col-1";
-	document.getElementById("div1").className = "col-2";
+	document.getElementById("illu1").className = "col-2";
+	document.getElementById("div4").className = "col-3";
+	document.getElementById("div6").className = "col-3";
 }
 function web(){
-	document.getElementById("web1").className = "col-2";
-	document.getElementById("div1").className = "col-1";
+	document.getElementById("web1").className = "col-4";
+	document.getElementById("div4").className = "col-2";
+	document.getElementById("div6").className = "col-2";
 }
 	
 function webOut(){
-	document.getElementById("web1").className = "col-1";
-	document.getElementById("div1").className = "col-2";
+	document.getElementById("web1").className = "col-2";
+	document.getElementById("div4").className = "col-3";
+	document.getElementById("div6").className = "col-3";
 }
 </script>
 </body>

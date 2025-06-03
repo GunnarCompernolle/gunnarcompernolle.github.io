@@ -68,7 +68,10 @@ table {
 }
 
 /* Voor DESKTOP */
-
+#row2{
+	visibility: visible;
+	
+}
 #topbar{
 	height: 200px;
 	padding: 0px;
@@ -92,7 +95,7 @@ table {
     .col-9 {width: 75%; height: 50px; float: left; background-color: hotpink}
     .col-10 {width: 83.33%; height: 50px; float: left; background-color: darkred}
     .col-11 {width: 91.66%; height: 50px; float: left; background-color: darkgreen}
-	.col-12 {width: 100%; height: 50px; float: left; background-color: black}
+	.col-12 {width: 100%; height: 50px; float: left; background-color: black;}
 	
 	
 	/* DESKTOP code binnen deze accolades van het @media stuk */
