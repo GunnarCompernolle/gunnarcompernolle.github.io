@@ -7,8 +7,14 @@
 <link rel="stylesheet" href="style_desktop.css">
 <link rel="stylesheet" href="Gravo.html">
 <link rel="stylesheet" href="avivo1.html">
+<link rel="stylesheet" href="web1.html">
+<link rel="stylesheet" href="illu.html">
 <body>
 	
+<div class="col-12" id="topbartop"></div>
+<div class="col-2" style="height: 200px;"></div>
+<div class="col-8" style="height: 200px; text-align: center; line-height: 100px; font-size: 55px"> Portfolio van <br> "naam voornaam" </div>
+<div class="col-2" style="height: 200px;"></div>
 <div class="col-12" id="topbar"></div>
 
 <div id="row1">
@@ -30,11 +36,15 @@
 <div id="row2">
 	<div class="col-3" id="div4" style="height: 150px;"></div>
 	<div class="col-2" id="illu1" style="height: 150px;"> 
-		<img src="illustratie.png" style="width: 100%" alt="illu" id="illu" onMouseOver="illu()" onMouseOut="illuOut()"> 
+		<a href="illu.html">
+			<img src="illustratie.png" style="width: 100%" alt="illu" id="illu" onMouseOver="illu()" onMouseOut="illuOut()"> 
+		</a>
 	</div>
 	<div class="col-2" id="div5" style="height: 150px;"></div>
 	<div class="col-2" id="web1" style="height: 150px;"> 
-		<img src="webdesign.png" style="width: 100%" alt="web" id="web" onMouseOver="web()" onMouseOut="webOut()"> 
+		<a href="web1.html">
+			<img src="webdesign.png" style="width: 100%" alt="web" id="web" onMouseOver="web()" onMouseOut="webOut()">
+		</a>
 	</div>
 	<div class="col-3" id="div6" style="height: 150px;"></div>
 </div>
@@ -44,8 +54,13 @@ function gravo(){
 	document.getElementById("gravo1").className = "col-4";
 	document.getElementById("div3").className = "col-2";
 	document.getElementById("div1").className = "col-2";
-	document.getElementById("gravo1").style.height = "300px";
-	document.getElementById("avivo1").style.height = "300px";
+	document.getElementById("gravo1").style.height = "250px";
+	document.getElementById("avivo1").style.height = "250px";
+	
+	document.getElementById("topbar").innerHTML = "Ga naar Grafische Vormgeving";
+	document.getElementById("topbar").style.lineHeight = "190px";
+	document.getElementById("topbar").style.fontSize = "30px";
+	document.getElementById("topbar").style.textAlign = "center";	
 }
 	
 function gravoOut(){
@@ -54,11 +69,17 @@ function gravoOut(){
 	document.getElementById("div1").className = "col-3";
 	document.getElementById("gravo1").style.height = "150px";
 	document.getElementById("avivo1").style.height = "150px";
+	document.getElementById("topbar").innerHTML = "";	
 }
 function avivo(){
 	document.getElementById("avivo1").className = "col-4";
 	document.getElementById("div3").className = "col-2";
-	document.getElementById("div1").className = "col-2";	document.getElementById("avivo1").style.height = "300px";
+	document.getElementById("div1").className = "col-2";	document.getElementById("avivo1").style.height = "250px";
+	
+	document.getElementById("topbar").innerHTML = "Ga naar Audiovisuele Vormgeving";
+	document.getElementById("topbar").style.lineHeight = "190px";
+	document.getElementById("topbar").style.fontSize = "30px";
+	document.getElementById("topbar").style.textAlign = "center";	
 }
 	
 function avivoOut(){
@@ -66,28 +87,41 @@ function avivoOut(){
 	document.getElementById("div3").className = "col-3";
 	document.getElementById("div1").className = "col-3";
 	document.getElementById("avivo1").style.height = "150px";
+	document.getElementById("topbar").innerHTML = "";
 }
 function illu(){
 	document.getElementById("illu1").className = "col-4";
 	document.getElementById("div4").className = "col-2";
 	document.getElementById("div6").className = "col-2";
+	
+	document.getElementById("topbar").innerHTML = "Ga naar Illustratie";
+	document.getElementById("topbar").style.lineHeight = "190px";
+	document.getElementById("topbar").style.fontSize = "30px";
+	document.getElementById("topbar").style.textAlign = "center";
 }
 	
 function illuOut(){
 	document.getElementById("illu1").className = "col-2";
 	document.getElementById("div4").className = "col-3";
 	document.getElementById("div6").className = "col-3";
+	document.getElementById("topbar").innerHTML = "";
 }
 function web(){
 	document.getElementById("web1").className = "col-4";
 	document.getElementById("div4").className = "col-2";
 	document.getElementById("div6").className = "col-2";
+	
+	document.getElementById("topbar").innerHTML = "Ga naar Webdesign";
+	document.getElementById("topbar").style.lineHeight = "190px";
+	document.getElementById("topbar").style.fontSize = "30px";
+	document.getElementById("topbar").style.textAlign = "center";
 }
 	
 function webOut(){
 	document.getElementById("web1").className = "col-2";
 	document.getElementById("div4").className = "col-3";
 	document.getElementById("div6").className = "col-3";
+	document.getElementById("topbar").innerHTML = "";
 }
 </script>
 </body>
