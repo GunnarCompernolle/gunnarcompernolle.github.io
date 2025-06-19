@@ -64,7 +64,7 @@ table {
     .col-m-11 {width: 91.66%; height: 50px; float: left; background-color: violet}
     .col-m-12 {width: 100%; height: 50px; float: left; background-color: maroon}
     .col-m-12-bottem {width: 100%; height: 50px; float: left;}
-	
+	.zero{width: 0%; height: 0px;}
 	/* MOBIELE code binnen deze accolades van het @media stuk */
 	#desktop{
 		display: none;
@@ -72,24 +72,18 @@ table {
 	#mobile{
 		display: block;
 	}
+	#mobile1{
+		display: block;
+	}
+	#desktop1{
+		display: none;
+	}
+	#topbar{display: none;}
 }
 
 /* Voor DESKTOP */
-#row2{
-	visibility: visible;
-	
-}
-#topbar{
-	height: 200px;
-	padding: 0px;
-}
 
-#gravo:hover{
-	cursor: pointer;
-}
-#avivo:hover{
-	cursor: pointer;
-}
+
 @media only screen and (min-width: 601px) {
     .col-1 {width: 8.33%; height: 50px; float: left; background-color: red}
     .col-2 {width: 16.66%; height: 50px; float: left; background-color: orange}
@@ -104,14 +98,40 @@ table {
     .col-11 {width: 91.66%; height: 50px; float: left; background-color: darkgreen}
 	.col-12 {width: 100%; height: 50px; float: left; background-color: lightgray;}
 	
+	#row2{
+	visibility: visible;
+	}
+	
+	#topbar{
+	height: 200px;
+	padding: 0px;
+	display: block;
+	}
+
+	#gravo:hover{
+	cursor: pointer;
+	}
+	
+	#avivo:hover{
+	cursor: pointer;
+	}
+	
 	#magazine{
 		display: none;
 	}
+	
 	#desktop{
 		display: block;
 	}
+	
 	#mobile{
 		display: none;
+	}
+	#mobile1{
+		display: none;
+	}
+	#desktop1{
+		display: block;
 	}
 	/* DESKTOP code binnen deze accolades van het @media stuk */
 }

@@ -5,33 +5,112 @@
 <title>gravo</title>
 <link href="style_desktop.css" rel="stylesheet" type="text/css">
 </head>
-<div class="col-2" style="height: 75px;"></div>
-<div class="col-8" style="height: 75px; text-align: center; line-height: 75px; font-size: 55px"> Gravo </div>
-<div class="col-2" style="height: 75px;"> <a href="desktop.html" style="text-align: center;"> <img src="arrow.png" alt="arrow" style="width: 25%; margin-top: 7.5px; margin-left: 25px; border: solid 2px #8BD3D6; border-radius: 15px;"> </a></div>
+<div class="col-2 col-m-2" style="height: 75px;"></div>
+<div class="col-8 col-m-8" style="height: 75px; text-align: center; line-height: 75px; font-size: 55px"> Gravo </div>
 
-<div class="col-1" id="open" onClick="magazineOpen()" style="text-align: center; line-height: 45px; float: left;"> open
-</div>
-<div id="close" class="col-1" onClick="magazineClose()" style="text-align: center; line-height: 45px; float: left; visibility: block"> close
-</div>
-<div class="col-11"></div>
+<div id="mobile1" class="col-m-2" style="height: 75px;"> <a href="desktop.html" style="text-align: center;"> <img src="arrow.png" alt="arrow" style="width: 90%; margin-top: 7.5px; margin-left: 0px; border: solid 2px #8BD3D6; border-radius: 15px;"> </a></div>
+	
+<div id="desktop1" class="col-2" style="height: 75px;"> <a href="desktop.html" style="text-align: center;"> <img src="arrow.png" alt="arrow" style="width: 50%; margin-top: 7.5px; margin-left: 0px; border: solid 2px #8BD3D6; border-radius: 15px;"> </a></div>
+	
+<div class="col-12 col-m-12"></div>	
 
+<div class="col-1 col-m-3"></div>
+<button id="open" class="col-4 col-m-6" onClick="magazineOpen()" style="text-align: center; line-height: 45px; float: left; border-radius: 15px"> klik hier om  de magazine te openen </button>
+<button id="close" class="col-4 col-m-6" onClick="magazineClose()" style="text-align: center; line-height: 45px; float: left; display: none; border-radius: 15px"> klik hier om  de magazine te sluiten </button>
 
-<iframe src="Liam_magazine_5CMa_interactief.pdf" width="100%" height="650" style="margin-top: 150px" id="magazine">
+<div class="col-7 col-m-3"></div>
+<iframe src="Liam_magazine_5CMa_interactief.pdf" width="100%" height="650" style="margin-top: 150px; display: none;" id="magazine">
 </iframe>
+	
+<div class="col-12 col-m-12"></div>
+	
+<div class="col-1 col-m-3"></div>
+<button class="col-4 col-m-6" id="keuze1" style="text-align: center; line-height: 45px; float: left; display: block; border-radius: 15px" onClick="openkeuzemenu()"> Open keuzemenu foute flyers </button>
+<button class="col-4 col-m-6" id="keuze2" style="text-align: center; line-height: 45px; float: left; display: none; border-radius: 15px" onClick="sluitkeuzemenu()"> Sluit keuzemenu foute flyers </button>
+<div class="col-7 col-m-3"></div>
+	
+
+	
+<div id="row" class="col-5 col-m-5" style="float: left; height: 50px; display: none">
+	<div class="col-12" style="height: 25px"></div>
+		<div class="col-2"></div>
+		<button id="flyer1" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="flyer1()"> Bekijk foute flyer 1 </button>
+		<div class="col-2"></div>
+		<button id="flyer2" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="flyer2()"> Bekijk foute flyer 2 </button>
+		<div class="col-2"></div>
+		<button id="flyer3" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="flyer3()"> Bekijk foute flyer 3 </button>
+		<div class="col-2"></div>
+		<button id="flyer4" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="flyer4()"> Bekijk foute flyer 4 </button>
+		<div class="col-2"></div>
+		<button id="flyer5" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="sluitflyer()"> Sluit openstaande foute flyer </button>
+		<div class="col-12" style="height: 25px"></div>
+</div>
+	<div id="flyerfoto">
+	<img id="rushopdracht" src="flyer_rushopdracht_juist.png" alt="fouteflyer1" width="50%" style="float: right; display: none;">
+	<img id="rushopdracht2" src="Liam_Flyer1.png" alt="fouteflyer1" width="50%" style="float: right; display: none;">
+	<img id="rushopdracht3" src="Liam_Flyer2.png" alt="fouteflyer1" width="50%" style="float: right; display: none;">
+	<img id="rushopdracht4" src="Liam_Flyer3.png" alt="fouteflyer1" width="50%" style="float: right; display: none;"></div>	
+
+	
 
 <script>
 	
 	function magazineOpen(){
-		document.getElementById("magazine").style.visibility = "visible";
-		document.getElementById("close").style.visibility = "visible";
-		document.getElementById("open").style.visibility = "hidden";
+		document.getElementById("magazine").style.display = "block";
+		document.getElementById("close").style.display = "block";
+		document.getElementById("open").style.display = "none";
 	}
 
 	function magazineClose(){
-		document.getElementById("magazine").style.visibility = "hidden";
-		document.getElementById("close").style.visibility = "hidden";
-		document.getElementById("open").style.visibility = "visible";
+		document.getElementById("magazine").style.display = "none";
+		document.getElementById("close").style.display = "none";
+		document.getElementById("open").style.display = "block";
 	}
+
+	function flyer1(){
+		document.getElementById("rushopdracht").style.display = "block"
+		document.getElementById("rushopdracht2").style.display = "none"
+		document.getElementById("rushopdracht3").style.display = "none"
+		document.getElementById("rushopdracht4").style.display = "none"
+	}
+	function flyer2(){
+		document.getElementById("rushopdracht").style.display = "none"
+		document.getElementById("rushopdracht2").style.display = "block"
+		document.getElementById("rushopdracht3").style.display = "none"
+		document.getElementById("rushopdracht4").style.display = "none"
+	}
+	function flyer3(){
+		document.getElementById("rushopdracht").style.display = "none"
+		document.getElementById("rushopdracht2").style.display = "none"
+		document.getElementById("rushopdracht3").style.display = "block"
+		document.getElementById("rushopdracht4").style.display = "none"
+	}
+	function flyer4(){
+		document.getElementById("rushopdracht").style.display = "none"
+		document.getElementById("rushopdracht2").style.display = "none"
+		document.getElementById("rushopdracht3").style.display = "none"
+		document.getElementById("rushopdracht4").style.display = "block"
+	}
+	function sluitflyer(){
+		document.getElementById("rushopdracht").style.display = "none"
+		document.getElementById("rushopdracht2").style.display = "none"
+		document.getElementById("rushopdracht3").style.display = "none"
+		document.getElementById("rushopdracht4").style.display = "none"
+	}
+	function openkeuzemenu(){
+		document.getElementById("row").style.display = "block"
+		document.getElementById("keuze1").style.display = "none"
+		document.getElementById("keuze2").style.display = "block"
+		document.getElementById("flyerfoto").style.display = "block"
+	}
+	function sluitkeuzemenu(){
+		document.getElementById("row").style.display = "none"
+		document.getElementById("keuze1").style.display = "block"
+		document.getElementById("keuze2").style.display = "none"
+		sluitflyer();
+		document.getElementById("flyerfoto").style.display = "none"
+	}
+	
 	
 </script>
 
