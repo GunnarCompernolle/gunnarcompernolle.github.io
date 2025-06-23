@@ -14,72 +14,120 @@
 	
 	
 	
-	<div class="col-12" style="height: 25px"></div>
+	<div class="col-12 col-m-12" style="height: 25px"></div>
 		<div class="col-2"></div>
 		<button id="animatie1" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="flyer1()"> Bekijk animatie: versnelling </button>
 	
-	<video width="66.66%" controls>
+	<video id="a1" width="66.66%" controls style="display: none;">
 		<source src="accelaration.mp4" type="video/mp4">
 	</video>
 	
 		<div class="col-2"></div>
-		<button id="animatie3" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="flyer3()"> Bekijk animatie: constante snelheid </button>
+		<button id="animatie3" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="flyer2()"> Bekijk animatie: constante snelheid </button>
 	
-	<video width="66.66%" controls>
+	<video id="a2" width="66.66%" controls style="display: none;">
 		<source src="constant.mp4" type="video/mp4">
 	</video>
 	
 		<div class="col-2"></div>
-			<button id="animatie2" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="flyer2()"> Bekijk animatie: vertraging </button>
+			<button id="animatie2" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="flyer3()"> Bekijk animatie: vertraging </button>
 
-		<video width="66.66%" controls>
+		<video id="a3" width="66.66%" controls style="display: none;">
 		<source src="descelaration_1.mp4" type="video/mp4">
 	</video>
 		<div class="col-2"></div>
 		<button id="animatie4" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="flyer4()"> Bekijk animatie: keyframing </button>
 	
-	<video width="66.66%" controls>
+	<video id="a4" width="66.66%" controls style="display: none;">
 		<source src="blocking2_2.mp4" type="video/mp4">
 	</video>
 	
 		<div class="col-2"></div>
-		<button id="animatie5" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="sluitflyer()"> Bekijk animatie: dansende bloemen </button>
+		<button id="animatie5" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="flyer5()"> Bekijk animatie: dansende bloemen </button>
 	
-	<video width="66.66%" controls>
-	<source src="dancingFlower-NEW.mp4" type="video/mp4">
-</video>
+	<video id="a5" width="66.66%" controls style="display: none;">
+		<source src="dancingFlower-NEW.mp4" type="video/mp4">
+	</video>
 	
 		<div class="col-2"></div>
-		<button id="animatie6" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="sluitflyer()"> Bekijk animatie: animaties met Adobe Animate </button>
-		<div class="col-12" style="height: 25px"></div>
-	<video width="66.66%" controls>
-	<source src="liam_montage_5CMa.mp4" type="video/mp4">
-</video>
-	
-<div class="col-12" style="height: 100px;"></div>
-
+		<button id="animatie6" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="flyer6()"> Bekijk animatie: animaties met Adobe Animate </button>
 
 	
-<div class="col-12" style="height: 100px;"></div>
-<div class="col-4">Dit ging over animeren met een keyframing.</div>
+	<video id="a6" width="66.66%" controls style="display: none;">
+		<source src="liam_montage_5CMa.mp4" type="video/mp4">
+	</video>
+	
+		<div class="col-2"></div>
+		<button id="animatie7" class="col-10 col-m-12" style="border-radius: 15px; margin-bottom: 10px;" onclick="flyer7()"> Bekijk animatie: 6 soorten om te animeren </button>
 
-<div class="col-12" style="height: 100px;"></div>
-	<div class="col-4"></div>
-<video width="66.66%" controls>
-	<source src="carcar (1).mp4" type="video/mp4">
-</video>
-<div class="col-12" style="height: 100px;"></div>
-	<div class="col-4"></div>
+	
+	<video id="a7" width="66.66%" controls style="display: none;">
+		<source src="carcar (1).mp4" type="video/mp4">
+	</video>
+	
 
-<div class="col-12" style="height: 100px;"></div>
-	<div class="col-4"></div>
-
-<div class="col-12" style="height: 100px;"></div>
-	<div class="col-4"></div>
-
-<div class="col-12" style="height: 100px;"></div>
-	<div class="col-4"></div>
 
 <body>
+	<script>
+		
+	function flyer1(){
+		document.getElementById("a1").style.display = "block";		document.getElementById("a2").style.display = "none";
+		document.getElementById("a3").style.display = "none";
+		document.getElementById("a4").style.display = "none";
+		document.getElementById("a5").style.display = "none";
+		document.getElementById("a6").style.display = "none";
+		document.getElementById("a7").style.display = "none";
+	}
+	function flyer2(){
+		document.getElementById("a1").style.display = "none";		document.getElementById("a2").style.display = "block";
+		document.getElementById("a3").style.display = "none";
+		document.getElementById("a4").style.display = "none";
+		document.getElementById("a5").style.display = "none";
+		document.getElementById("a6").style.display = "none";
+		document.getElementById("a7").style.display = "none";
+	}
+	function flyer3(){
+		document.getElementById("a1").style.display = "none";		document.getElementById("a2").style.display = "none";
+		document.getElementById("a3").style.display = "block";
+		document.getElementById("a4").style.display = "none";
+		document.getElementById("a5").style.display = "none";
+		document.getElementById("a6").style.display = "none";
+		document.getElementById("a7").style.display = "none";
+	}
+	function flyer4(){
+		document.getElementById("a1").style.display = "none";		document.getElementById("a2").style.display = "none";
+		document.getElementById("a3").style.display = "none";
+		document.getElementById("a4").style.display = "block";
+		document.getElementById("a5").style.display = "none";
+		document.getElementById("a6").style.display = "none";
+		document.getElementById("a7").style.display = "none";
+	}
+	function flyer5(){
+		document.getElementById("a1").style.display = "none";		document.getElementById("a2").style.display = "none";
+		document.getElementById("a3").style.display = "none";
+		document.getElementById("a4").style.display = "none";
+		document.getElementById("a5").style.display = "block";
+		document.getElementById("a6").style.display = "none";
+		document.getElementById("a7").style.display = "none";
+	}
+	function flyer6(){
+		document.getElementById("a1").style.display = "none";		document.getElementById("a2").style.display = "none";
+		document.getElementById("a3").style.display = "none";
+		document.getElementById("a4").style.display = "none";
+		document.getElementById("a5").style.display = "none";
+		document.getElementById("a6").style.display = "block";
+		document.getElementById("a7").style.display = "none";
+	}
+	function flyer7(){
+		document.getElementById("a1").style.display = "none";		document.getElementById("a2").style.display = "none";
+		document.getElementById("a3").style.display = "none";
+		document.getElementById("a4").style.display = "none";
+		document.getElementById("a5").style.display = "none";
+		document.getElementById("a6").style.display = "none";
+		document.getElementById("a7").style.display = "block";
+	}
+	
+	
+	</script>
 </body>
 </html>

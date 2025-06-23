@@ -51,18 +51,18 @@ table {
 
 @media only screen and (max-width: 600px) {
 	
-    .col-m-1 {width: 8.33%; background-color: aquamarine;  height: 50px; float: left;}
-    .col-m-2 {width: 16.66%; background-color: blue; height: 50px; float: left;}
-    .col-m-3 {width: 25%; background-color: red; height: 50px; float: left;}
-    .col-m-4 {width: 33.33%; background-color: yellow; height: 50px; float: left;}
-    .col-m-5 {width: 41.66%; height: 50px; float: left; background-color: orange}
-    .col-m-6 {width: 50%; height: 50px; float: left; background-color: cyan}
-    .col-m-7 {width: 58.33%; height: 50px; float: left; background-color: magenta}
-    .col-m-8 {width: 66.66%; height: 50px; float: left; background-color: rebeccapurple}
-    .col-m-9 {width: 75%; height: 50px; float: left; background-color: lawngreen}
-    .col-m-10 {width: 83.33%; height: 50px; float: left; background-color: gray}
-    .col-m-11 {width: 91.66%; height: 50px; float: left; background-color: violet}
-    .col-m-12 {width: 100%; height: 50px; float: left; background-color: maroon}
+    .col-m-1 {width: 8.33%; ;  height: 50px; float: left;}
+    .col-m-2 {width: 16.66%; ; height: 50px; float: left;}
+    .col-m-3 {width: 25%; ; height: 50px; float: left;}
+    .col-m-4 {width: 33.33%; ; height: 50px; float: left;}
+    .col-m-5 {width: 41.66%; height: 50px; float: left; }
+    .col-m-6 {width: 50%; height: 50px; float: left; }
+    .col-m-7 {width: 58.33%; height: 50px; float: left; }
+    .col-m-8 {width: 66.66%; height: 50px; float: left; }
+    .col-m-9 {width: 75%; height: 50px; float: left; }
+    .col-m-10 {width: 83.33%; height: 50px; float: left; }
+    .col-m-11 {width: 91.66%; height: 50px; float: left; }
+    .col-m-12 {width: 100%; height: 50px; float: left; }
     .col-m-12-bottem {width: 100%; height: 50px; float: left;}
 	.zero{width: 0%; height: 0px;}
 	/* MOBIELE code binnen deze accolades van het @media stuk */
@@ -85,18 +85,18 @@ table {
 
 
 @media only screen and (min-width: 601px) {
-    .col-1 {width: 8.33%; height: 50px; float: left; background-color: red}
-    .col-2 {width: 16.66%; height: 50px; float: left; background-color: orange}
-    .col-3 {width: 25%; height: 50px; float: left; background-color: yellow}
-    .col-4 {width: 33.33%; height: 50px; float: left; background-color: green}
-    .col-5 {width: 41.66%; height: 50px; float: left; background-color: cyan}
-    .col-6 {width: 50%; height: 50px; float: left; background-color: blue}
-    .col-7 {width: 58.33%; height: 50px; float: left; background-color: violet}
-    .col-8 {width: 66.66%; height: 50px; float: left; background-color: darkviolet}
-    .col-9 {width: 75%; height: 50px; float: left; background-color: hotpink}
-    .col-10 {width: 83.33%; height: 50px; float: left; background-color: darkred}
-    .col-11 {width: 91.66%; height: 50px; float: left; background-color: darkgreen}
-	.col-12 {width: 100%; height: 50px; float: left; background-color: lightgray;}
+    .col-1 {width: 8.33%; height: 50px; float: left; }
+    .col-2 {width: 16.66%; height: 50px; float: left; }
+    .col-3 {width: 25%; height: 50px; float: left; }
+    .col-4 {width: 33.33%; height: 50px; float: left; }
+    .col-5 {width: 41.66%; height: 50px; float: left; }
+    .col-6 {width: 50%; height: 50px; float: left; }
+    .col-7 {width: 58.33%; height: 50px; float: left; }
+    .col-8 {width: 66.66%; height: 50px; float: left; }
+    .col-9 {width: 75%; height: 50px; float: left; }
+    .col-10 {width: 83.33%; height: 50px; float: left; }
+    .col-11 {width: 91.66%; height: 50px; float: left; }
+	.col-12 {width: 100%; height: 50px; float: left; ;}
 	
 	#row2{
 	visibility: visible;
