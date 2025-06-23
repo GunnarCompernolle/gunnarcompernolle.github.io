@@ -16,7 +16,8 @@
 <div class="col-2 zero" style="background-color: lightgray; height: 200px"></div>
 <div class="col-8 col-m-12" style="height: 200px; text-align: center; line-height: 100px; font-size: 55px; background-color: lightgray;"> Portfolio van <br> Liam Desramault </div>
 <div class="col-2 zero" style="height: 200px; background-color: lightgray;"></div>
-<div class="col-12 zero" id="topbar"></div>
+	
+<div class="col-12" id="topbar"></div>
 
 <div id="desktop1">
 	<div id="Desktoprow1">
@@ -48,39 +49,39 @@
 </div>
 	
 <div id="mobile1">
-	<div id="Desktoprow1">
-		<div class=" col-m-1" id="div1" style="height: 200px;"></div>
-		<div class="col-m-5" id="gravo1" style="height: 200px;"> 
+	<div id="Desktoprow1a">
+		<div class=" col-m-1" id="div1a" style="height: 200px;"></div>
+		<div class="col-m-5" id="gravo1a" style="height: 200px;"> 
 			<a href="Gravo.html"> 
-				<img src="Gravo_juist.png" style="width: 100%" alt="gravo" id="gravo"> 
+				<img src="Gravo_juist.png" style="width: 100%" alt="gravo" id="gravoa"> 
 			</a>
 		</div>
-		<div class="col-m-5" id="avivo1" style="height: 200px;"> 
+		<div class="col-m-5" id="avivo1a" style="height: 200px;"> 
 			<a href="avivo1.html">
-				<img src="avivo.png" style="width: 100%" alt="avivo" id="avivo">
+				<img src="avivo.png" style="width: 100%" alt="avivo" id="avivoa">
 			</a>
 		</div>
-		<div class="col-m-1" id="div3" style="height: 200px;"></div>
+		<div class="col-m-1" id="div3a" style="height: 200px;"></div>
 	</div>
 
-	<div id="Desktoprow2">
+	<div id="Desktoprow2a">
 		<div class="col-m-1" id="div4" style="height: 200px;"></div>
-		<div class="col-m-5" id="illu1" style="height: 200px;"> 
+		<div class="col-m-5" id="illu1a" style="height: 200px;"> 
 			<a href="illu.html">
-				<img src="illustratie.png" style="width: 100%" alt="illu" id="illu"> 
+				<img src="illustratie.png" style="width: 100%" alt="illu" id="illua"> 
 			</a>
 		</div>
-		<div class="col-m-5" id="web1" style="height: 200px;"> 
+		<div class="col-m-5" id="web1a" style="height: 200px;"> 
 			<a href="web1.html">
-				<img src="webdesign.png" style="width: 100%" alt="web" id="web">
+				<img src="webdesign.png" style="width: 100%" alt="web" id="weba">
 			</a>
 		</div>
-		<div class="col-m-1" id="div6" style="height: 200px;"></div>
+		<div class="col-m-1" id="div6a" style="height: 200px;"></div>
 	</div>
 </div>
 <script>
 function gravo(){
-	document.getElementById("gravo1").className = "col-5";
+	document.getElementById("gravo1").className = "col-3";
 	document.getElementById("div3").className = "col-2";
 	document.getElementById("div1").className = "col-2";
 	document.getElementById("gravo1").style.height = "250px";
@@ -101,7 +102,7 @@ function gravoOut(){
 	document.getElementById("topbar").innerHTML = "";	
 }
 function avivo(){
-	document.getElementById("avivo1").className = "col-5";
+	document.getElementById("avivo1").className = "col-3";
 	document.getElementById("div3").className = "col-2";
 	document.getElementById("div1").className = "col-2";	document.getElementById("avivo1").style.height = "250px";
 	
@@ -119,7 +120,7 @@ function avivoOut(){
 	document.getElementById("topbar").innerHTML = "";
 }
 function illu(){
-	document.getElementById("illu1").className = "col-5";
+	document.getElementById("illu1").className = "col-3";
 	document.getElementById("div4").className = "col-2";
 	document.getElementById("div6").className = "col-2";
 	
@@ -136,7 +137,7 @@ function illuOut(){
 	document.getElementById("topbar").innerHTML = "";
 }
 function web(){
-	document.getElementById("web1").className = "col-5";
+	document.getElementById("web1").className = "col-3";
 	document.getElementById("div4").className = "col-2";
 	document.getElementById("div6").className = "col-2";
 	
@@ -147,7 +148,7 @@ function web(){
 }
 	
 function webOut(){
-	document.getElementById("web1").className = "col-2";
+	document.getElementById("web1").className = "col-3";
 	document.getElementById("div4").className = "col-3";
 	document.getElementById("div6").className = "col-3";
 	document.getElementById("topbar").innerHTML = "";
